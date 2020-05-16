@@ -51,7 +51,7 @@ array, taking in three arguments.
 ```js
 
 function isOdd(element, index, array) {
-  return (element %2 === 1);
+  return (element % 2 === 1);
 }
 
 console.log([4, 6, 8, 10].find(isOdd)); // undefined, not found
@@ -63,7 +63,7 @@ console.log([4, 7, 5,  8, 10].find(isOdd)); // 7
 `Array.prototype.find()` takes a callback and passes three arguments to it: 
 the current element of the array, the index of the current element, and the array 
 itself. It returns the first element in the array that satisfies the condition 
-specified by the function, or -1 if a matching element is not found.
+specified by the function, or `undefined` if a matching element is not found.
 
 ## Conclusion
 
